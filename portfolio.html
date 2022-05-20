@@ -1,147 +1,153 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Caroline Williams | Web Maps</title>
-      <link rel="stylesheet" href="styles/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caroline Williams | Web Maps</title>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caroline Williams | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <!--- Navigation Bar --->
 <body>
   <nav>
-    <div class="banner_wp">
-      <div class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="about.html" class="active">ABOUT ME</a></li>
-          <li><a href="resume.html" class="active">RESUME</a></li>
-          <li><a href="portfolio.html" class="active">WEB MAPS</a></li>
-        </ul>
-      </div>
+    <div class="navbar" id="mynavbar">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT ME</a>
+      <a href="resume.html">RESUME</a>
+      <a href="portfolio.html" class="active">PORTFOLIO</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </nav>
-<div class="text_am">
-  <h1>Web Maps</h1>
-  <p></p>
-</br>
-</div>
-<br><br><br><br><br><br><br>
-  <section>
-    <div class="web_page">
-        </br>
-        <h1>311 Incidents Map</h1>
-          <br>
+  <!--- Section 1: Title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
     </div>
-  </section>
-  <br>
-  <section>
-  <div class="resume_page">
-    <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
-    </style>
-    <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="311_Incidents" src="https://arcg.is/1f04vb"></iframe></div>
   </div>
-  </section>
-  <br>
-  <section>
-    <div class="resume_page">
-        </br>
-        <p>Note: This incidents map is fully available to Clark University users. Alternatively, certain features may not be available due to permissions.</p>
-          <br>
+  <!--- Section 2a: GIS Portfolio control buttons --->
+
+  <!-- Test Layout -->
+<div class="portfolio_cont">
+<div id="myBtnContainer">
+  <button class="portbtn portactive" onclick="filterSelection('all')"> Show all</button>
+  <button class="portbtn" onclick="filterSelection('GIS')"> GIS</button>
+  <button class="portbtn" onclick="filterSelection('remotesensing')"> Remote Sensing</button>
+  <button class="portbtn" onclick="filterSelection('webmaps')"> Web Mapping</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="portrow">
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/Mapping-Burn-Scars-using-GEE.html" target="" class="port_txt">
+        <img src="images/wildfire_project_crop.png" alt="Mapping Burn Scars using Google Earth Engine JavaScript API" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Mapping Burn Scars using Google Earth Engine JavaScript API</h3>
+      </a>
     </div>
-  </section>
-  <br>
-  <div class="web_page">
-      </br>
-      <h1>Species Distribution Web Map</h1>
-        <br><br>
   </div>
-<!--   <iframe width="100%" height="800px" src="https://clarku.maps.arcgis.com/apps/MapJournal/index.html?appid=b6fd456926984e04ad5274bfb93e696f" frameborder="0" scrolling="no"></iframe> -->
-<!-- <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1g3yYs4jtGeNDgl6YdLbiJCohXxHxMtOdDY564pPl6iw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
-<!-- <iframe src="https://uploads.knightlab.com/storymapjs/e0a28a2aefd1d07d7eb8b4ebfb642489/historical-tropical-cyclone-events/index.html" frameborder="0" width="100%" height="800"></iframe> -->
-<!--<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="311_Incidents" src="//clarku.maps.arcgis.com/apps/Embed/index.html?webmap=7e5cdacfeafc4f43b1ad1e7599e89418&extent=-71.9058,42.2123,-71.6522,42.3214&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>-->
-</section>
-<section>
-<div class="resume_page">
-  <iframe width="100%" height="800px" src="https://clarku.maps.arcgis.com/apps/MapJournal/index.html?appid=b6fd456926984e04ad5274bfb93e696f" frameborder="0" scrolling="no"></iframe>
-  <br>
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/NASA-DEVELOP-CentralAmericaDisasters.html" target="" class="port_txt">
+        <img src="images/2021Fall_MSFC_CentralAmericaDisasters_WebsiteImage_mycopy.jpg" alt="Central America Disasters Project" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">NASA DEVELOP Central America Disasters Fall 2021 Project</h3>
+        <h4>Image Credit: NASA DEVELOP</h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/NASA-DEVELOP-ArgentinaAg.html" target="" class="port_txt">
+        <img src="images/2021Sum_GSFC_ArgentinaAg_WebsiteImage.jpg" class alt="Argentina Agriculture Project" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">NASA DEVELOP Argentina Agriculture Summer 2021 Project</h3>
+        <h4>Image Credit: NASA DEVELOP</h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/WCS-Environmental-Trends-Analysis.html" target="" class="port_txt">
+      <img src="images/wcs_project_image_crop.jpg" alt="WCS Environmental Trends Analysis" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">WCS Environmental Trends Analysis Ruaha & Katavi National Parks</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/USAID-Web-Mapping-Course-Project.html" target="" class="port_txt">
+      <img src="images/WM_layer_crop.png" alt="USAID Web Mapping Project" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Web Mapping Final Project USAID Prototype</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/Malnutrition-Health-Sites-in-Mali-Web-Mapping.html" target="" class="port_txt">
+      <img src="images/studio6_project_image_crop.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Malnutrition & Health Sites in Mali Web Mapping</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/Vulnerability-Populations-in-Vietnam-to-Tropical-Cyclones.html" target="" class="port_txt">
+      <img src="images/vulnerability_project_image_v2_crop.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Vulnerability of Populations in Vietnam to Tropical Cyclones</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS webmaps">
+    <div class="portcontent">
+      <a href="projects/SDM_Eastern_Hemlock_Web_Application.html" target="" class="port_txt">
+      <img src="images/SDM2_layer_crop.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Eastern Hemlock Species Distribution Model Web Map</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/Electric_Vehicle_Spatial_Analysis.html" target="" class="port_txt">
+      <img src="images/ny_fig2_crop.jpg" alt="People" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Electric Vehicle Spatial Analysis with R</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/SDM_Papio_anubis_and_hamadryas.html" target="" class="port_txt">
+      <img src="images/sdm_papio_anubis.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Specied Distribution Model: Papio anubis and Papio hamadryas</h3>
+      </a>
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
-</section>
-<br>
-<section>
-  <div class="resume_page">
-      </br>
-      <p>Note: You may need to zoom in for the extent of the slider maps to appear.</p>
-        <br>
-  </div>
-</section>
-<br>
-<section>
-  <div class="web_page">
-      </br>
-      <h1>Life of Hurricane Iota</h1>
-        <br>
-  </div>
-</section>
-<br>
-<section>
-<div class="resume_page">
-  <iframe src="https://uploads.knightlab.com/storymapjs/e0a28a2aefd1d07d7eb8b4ebfb642489/historical-tropical-cyclone-events/index.html" frameborder="0" width="100%" height="800"></iframe>
 </div>
-</section>
-<br>
-<section>
-  <div class="web_page">
-      </br>
-      <h1>Timeline of Hurricanes History</h1>
-        <br>
+  <!--- Section 3: Contact Information --->
+  <div class="about_me_interests_cont_pg2">
+    <div class="about_me_interests_pg2">
+      <br>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Contact</h2>
+      <br>
+      <p>Please feel free to contact me at my email address or through my LinkedIn Account below.</p>
+      <br>
+      <h2 style="font-family: 'Montserrat', sans-serif;">Email</h2>
+      <br>
+      <p>cawilliams719@gmail.com</p>
+      <br>
+    </div>
   </div>
-</section>
-<br>
-<section>
-<div class="resume_page">
-  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1g3yYs4jtGeNDgl6YdLbiJCohXxHxMtOdDY564pPl6iw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
-</div>
-</section>
-<br>
-<section>
-  <div class="web_page">
-      </br>
-      <h1>My Favorite Places</h1>
-        <br>
+  <!--- Footer --->
+  <div class="top_footer">
+    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;">Contact Me</p>
+    <a href="https://www.linkedin.com/in/caroline-ann-williams/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/cawilliams719"><i class="fa fa-github"></i></a>
   </div>
-</section>
-  <br>
-  <section>
-  <div class="web_page">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1UbfQQrnqcBGOqslg4Ssv9kZYTDYhP7m_&hl=en" width="640" height="480"></iframe>
+  <div class="bottom_footer">
+    <p><small>&copy; Copyright 2021, Caroline Williams</small></p>
   </div>
-  </section>
-</div>
-</section>
-<br>
-<section>
-  <div class="web_page">
-      </br>
-      <h1>New York Electric Vehicle Charging Stations</h1>
-        <br>
-  </div>
-</section>
-  <br>
-  <section>
-  <div class="web_page">
-    <script src="https://embed.github.com/view/geojson/cawilliams719/spatial_data/main/NY_CS.geojson"></script>
-  </div>
-  </section>
-</div>
-</section>
-</body>
-<!-- Footer -->
-<br/><br/><br/>
-<footer>
-  <div class="footer">
-  <a href="https://www.linkedin.com/in/caroline-ann-williams-research-assistant-tech-support/"><i class="fa fa-linkedin"></i></a>
-  <a href="https://github.com/cawilliams719"><i class="fa fa-github"></i></a>
-  </div>
-</footer>
+  <script src="scripts/filter.js"></script>
+  <script src="scripts/icon.js"></script>
+  </body>
 </html>
