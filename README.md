@@ -1,3 +1,5 @@
 # cawilliams719.github.io
 
-I am currently working on building my GIS Portfolio here on GitHub. My current GIS portfolio can be found via ArcGIS StoryMaps at https://arcg.is/0SWnXa0. 
+Welcome to my Portfolio! <br></br>
+I enjoy all things GIS, remote sensing, and Earth Science. This portfolio includes my professional and academic experiences. This portfolio also acts as a repository and web page for my project work in courses, professionally, or independently.<br></br>
+Check it out! <br> [Portfolio Website](https://cawilliams719.github.io/)
