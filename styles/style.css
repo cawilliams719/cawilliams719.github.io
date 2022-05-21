@@ -724,6 +724,12 @@ img {vertical-align: middle;}
   padding: 40px;
 }
 
+.aboutpag1-text{
+  text-align: left;
+  max-width: 500px;
+  /* font-size: 0.1vw; */
+}
+
 .about-text{
   text-align: left;
   /* font-size: 0.1vw; */
